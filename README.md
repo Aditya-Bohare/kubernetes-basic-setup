@@ -30,11 +30,15 @@ Initialize the Minikube Kubernetes cluster:
 ```bash
 minikube start
 
+---
+
 ### 2. **Build Docker Image**
 Build an image from your Dockerfile:
 
 ```bash
 docker image build -t simple-webpage .
+
+---
 
 ### 3. **Deploy Application**
 Apply the deployment configuration file:
@@ -42,11 +46,15 @@ Apply the deployment configuration file:
 ```bash
 kubectl apply -f ./nginx-deployment.yml
 
+---
+
 ### 4. **Deploy Service**
 Apply the service configuration file:
 
 ```bash
 kubectl apply -f ./nginx-service.yml
+
+---
 
 ### 5. ** Forward Local Port**
 Expose the application on your localhost:
@@ -56,6 +64,7 @@ kubectl port-forward service/nginx-web-service 8080:80
 
 Now, access your application at http://localhost:8080 in a web browser.
 
+---
 
 Verify deployment and service status with:
 ```bash
