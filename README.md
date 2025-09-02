@@ -1,4 +1,4 @@
-# 🐳 Kubernetes Basic Web Setup
+# ☸ Kubernetes Basic Web Setup
 
 This project demonstrates how to deploy a simple static website using **Docker**, **Kubernetes**, and **Minikube**. It includes:
 
